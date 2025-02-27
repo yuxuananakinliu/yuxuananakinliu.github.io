@@ -6,49 +6,70 @@
     <meta name="description" content="Anakin Liu's personal page">
     <meta name="author" content="Anakin Liu">
     <title>Anakin Liu</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+    
 <body>
-    <header>
+    <header class="text-center bg-dark text-white py-4">
         <h1>Anakin (Yuxuan) Liu</h1>
-        <img src="https://yuxuananakinliu.github.io/anakinliu.jpg" alt="Profile Picture" width="150">
-        <p>Email: <a href="yuxuananakinliu@gmail.com">yuxuananakinliu@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/yuxuananakinliu" target="_blank">linkedin.com/in/yuxuananakinliu</a></p>
+        <img src="https://yuxuananakinliu.github.io/anakinliu.jpg" alt="Profile Picture"  class="rounded-circle img-fluid" width="150">
+        <p>Email: <a href="yuxuananakinliu@gmail.com" class="text-light">yuxuananakinliu@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/yuxuananakinliu" class="text-light" target="_blank">linkedin.com/in/yuxuananakinliu</a></p>
     </header>
     
-    <section id="projects">
-        <h2>GitHub Projects</h2>
-        <div class="project">
-            <h3>Chip Purchase Platform</h3>
-            <img src="https://yuxuananakinliu.github.io/chipplatform.png" alt="Project Image" width="100">
-            <p>Course project of ERG3020 of CUHKSZ, a smart chip purchase platform that allow clients to compare different production plan and receive efficiency score of their own plans</p>
-            <a href="https://github.com/CSC3170-2022Fall/project-amdivia" target="_blank">View Repository</a>
-        </div>
-        
-        <div class="project">
-            <h3>Movie Recommendation</h3>
-            <img src="https://yuxuananakinliu.github.io/movierec.jpeg" alt="Project Image" width="100">
-            <p>Course project of ERG3020 of CUHKSZ, bulit a movie recommendation algorithm applying both Collaborative Filtering and PageRank</p>
-            <a href="https://github.com/yuxuananakinliu/ERG3020-Proj" target="_blank">View Repository</a>
-        </div>
-        
-        <div class="project">
-            <h3>Movie Recommendation</h3>
-            <img src="https://yuxuananakinliu.github.io/travelplan.png" alt="Project Image" width="100">
-            <p>Course project of BAX422 of UC Davis, applied open APIs and web scraping technique to bulid a platform for users to adjust travel plan according to weather in destination, available flights and hotels</p>
-            <a href="https://github.com/yuxuananakinliu/BAX-422-API-Application" target="_blank">View Repository</a>
-        </div>
-        
-        <div class="project">
-            <h3>Automated Data Analysis System</h3>
-            <img src="https://yuxuananakinliu.github.io/practicum.png" alt="Project Image" width="100">
-            <p>The UC Davis MSBA practicum project with STANDARD INSIGHTS&copy;. The system automatically process raw data from clients and generate visualization and analysis conclusion</p>
-            <a href="https://github.com/yuxuananakinliu/Standard-Insights-Practicum-2024-2025" target="_blank">View Repository</a>
+    <section id="projects" class="container my-5">
+        <h2 class="text-center">GitHub Projects</h2>
+        <div class="row">
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://yuxuananakinliu.github.io/chipplatform.png" class="card-img-top project-img" alt="Project Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Chip Purchase Platform</h5>
+                        <p>Course project of CSC3170 of CUHKSZ, a smart chip purchase platform that allow clients to compare different production plan and receive efficiency score of their own plans</p>
+                        <a href="https://github.com/CSC3170-2022Fall/project-amdivia" class="btn btn-primary" target="_blank">View Repository</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://yuxuananakinliu.github.io/movierec.jpeg" class="card-img-top project-img" alt="Project Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Movie Recommendation</h5>
+                        <p>Course project of ERG3020 of CUHKSZ, bulit a movie recommendation algorithm applying both Collaborative Filtering and PageRank</p>
+                        <a href="https://github.com/yuxuananakinliu/ERG3020-Proj" class="btn btn-primary" target="_blank">View Repository</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://yuxuananakinliu.github.io/travelplan.png" class="card-img-top project-img" alt="Project Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Smart Travel Planner</h5>
+                        <p>Course project of BAX422 of UC Davis, applied open APIs and web scraping technique to bulid a platform for users to adjust travel plan according to weather in destination, available flights and hotels</p>
+                        <a href="https://github.com/yuxuananakinliu/BAX-422-API-Application" class="btn btn-primary" target="_blank">View Repository</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://yuxuananakinliu.github.io/practicum.png" class="card-img-top project-img" alt="Project Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Automated Data Analysis System</h5>
+                        <p>The UC Davis MSBA practicum project with STANDARD INSIGHTS&copy;. The system automatically process raw data from clients and generate visualization and analysis conclusion</p>
+                        <a href="https://github.com/yuxuananakinliu/Standard-Insights-Practicum-2024-2025" class="btn btn-primary" target="_blank">View Repository</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    
-    <footer>
-        <p>&copy; <script>document.write(new Date().getFullYear());</script> <input_name>[ ]</p>
+
+    <footer class="text-center bg-dark text-white py-3 mt-4">
+        <p>&copy; <script>document.write(new Date().getFullYear());</script> Anakin (Yuxuan) Liu</p>
     </footer>
 </body>
 </html>
